@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
+import Home from './routes/homepage';
+import Resume from './routes/resumepage';
+import About from './routes/aboutmepage';
+import Project from './routes/projectpage';
+import Contact from './routes/contactmepage';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React Portifolio</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/resume' component={Resume} />
+          <Route exact path='/aboutme' component={About} />
+          <Route exact path='/projects' component={Project} />
+          <Route exact path='/contact' component={Contact} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
