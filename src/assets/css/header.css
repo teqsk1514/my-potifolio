@@ -1,0 +1,33 @@
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro'); */
+/* @import url('https://fonts.googleapis.com/css?family=Bangers'); */
+
+.font{
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Chewy', cursive;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .social-button{
+    /* border: 1px solid #ffde00 ; */
+    background-color: #ffde00;
+    color: black;
+    padding: 8px 20px 8px 20px;
+    font-size: 12px;
+    text-decoration-style: solid;
+    box-shadow: 3px 3px 15px 5px #373737;
+    font-family: 'Bitter', serif;
+
+}
+
+  .header-bg{
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
