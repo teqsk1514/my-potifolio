@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
+import { Layout } from 'antd';
+import Foot from '../components/footer';
+import NavHeader from '../components/header';
+import AboutContent from '../content/aboutpagecontent';
 
 
 export default class About extends Component {
     render() {
         return (
-            <h1>About Page</h1>
+            <Layout>
+                <NavHeader />
+                <AboutContent/>
+                <Foot />
+            </Layout>
         );
     }
 }

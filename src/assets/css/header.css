@@ -1,6 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro'); */
 /* @import url('https://fonts.googleapis.com/css?family=Bangers'); */
 
+/* @import "@material/button/mdc-button"; */
+
 .font{
   /* font-family: 'Source Sans Pro', sans-serif; */
   font-family: 'Chewy', cursive;
@@ -16,8 +18,11 @@
 
   .social-button{
     /* border: 1px solid #ffde00 ; */
-    background-color: #ffde00;
-    color: black;
+    background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color : white;
     padding: 8px 20px 8px 20px;
     font-size: 12px;
     text-decoration-style: solid;
